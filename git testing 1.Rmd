@@ -1,0 +1,49 @@
+---
+title: "Testing Git"
+author: "Adam Duerr"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Libraries
+```{r}
+library(renv)
+library(usethis)
+library(gitcreds)
+```
+
+Refernce - happygitwithr.com
+
+
+
+Configure git
+```{r}
+
+
+#name the default branch to main instead of master
+git_default_branch_configure(name="main")
+
+
+#creat github token
+create_github_token()
+#saved token here and in lastpass
+
+
+gitcreds_set()
+```
+Created repo on github 
+modified README.md using shell 
+commit the repo
+pushed the repo
+deleted the repo
+deleted the repo locally
+```{r}
+
+
+```
+
